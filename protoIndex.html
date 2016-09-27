@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>proto self diagnostic</title>
+	<link rel="stylesheet" href="protoStyle.css">
+</head>
+<body>
+
+<div id="column">
+	
+	<header>
+		<h1>Self-Diagnostic Prognosticator</h1>
+	</header>
+
+	<main>
+		<form id="theForm">
+			<legend><p>Answer questions and learn about yourself.</p></legend>
+			<fieldset data-comp="intelligence">
+				<legend><p>Can you describe the steps that you will take to find the materials that will support your business decisions and documentation for this exam? (Select all that apply.)</p></legend>
+				<label for="qz0"><input type="checkbox" name="q0" id="qz0">I need help with the research process</label>
+				<label for="qz1"><input type="checkbox" name="q0" id="qz1">My research skills are limited to Google and similar public search engines</label>
+				<label for="qz2"><input type="checkbox" name="q0" id="qz2">I have experience with the University of Phoenix library resources</label>
+				<label for="qz3"><input type="checkbox" name="q0" id="qz3">I have some experience with using businessspecific databases</label>
+				<label for="qz4"><input type="checkbox" name="q0" id="qz4">I have realworld experience doing graduate level business research</label>
+			</fieldset>
+			<fieldset data-comp="wizardry">
+				<legend><p>Do you have experience using proper techniques to deal with customer complaints? (Select all that apply.)</p></legend>
+				<label for="qz5"><input type="checkbox" name="q1" id="qz5">I do not have experience using proper techniques to deal with customer complaints.</label>
+				<label for="qz6"><input type="checkbox" name="q1" id="qz6">I have read about using proper techniques to deal with customer complaints.</label>
+				<label for="qz7"><input type="checkbox" name="q1" id="qz7">I can describe the proper techniques to use when dealing with customer complaints.</label>
+				<label for="qz8"><input type="checkbox" name="q1" id="qz8">I have previously used various techniques to handle customer complaints.</label>
+			</fieldset>
+			<fieldset data-comp="flying">
+				<legend><p>Have you previously taken the DiSC assessment or another personality test like it? (Select one.)</p></legend>
+				<label for="qz9"><input type="radio" name="q2" id="qz9">I have not previously taken the DiSC assessment or another personality test like it.</label>
+				<label for="qz10"><input type="radio" name="q2" id="qz10">I have read about the DiSC assessment and understand its purpose.</label>
+				<label for="qz11"><input type="radio" name="q2" id="qz11">I have previously taken the DiSC assessment or another personality test like it.</label>
+			</fieldset>
+			<fieldset data-comp="intelligence">
+				<legend><p>Do you have experience determining relevant market information for the execution of a sales strategy? (Select all that apply.)</p></legend>
+				<label for="qz12"><input type="checkbox" name="q3" id="qz12">I do not have experience determining relevant market information for the execution of a sales strategy.</label>
+				<label for="qz13"><input type="checkbox" name="q3" id="qz13">I have read about determining relevant market information for the execution of a sales strategy.</label>
+				<label for="qz14"><input type="checkbox" name="q3" id="qz14">I can describe the process for determining relevant market information for the execution of a sales strategy.</label>
+				<label for="qz15"><input type="checkbox" name="q3" id="qz15">I have previously worked determining relevant market information for the execution of a sales strategy.</label>
+			</fieldset>
+			<fieldset data-comp="wizardry">
+				<legend><p>Are you familiar with applying sales ethics to demonstrate truth in advertising? (Select all that apply.) </p></legend>
+				<label for="qz16"><input type="checkbox" name="q4" id="qz16">I am not familiar with applying sales ethics to demonstrate truth in advertising.</label>
+				<label for="qz17"><input type="checkbox" name="q4" id="qz17">I have read about applying sales ethics to demonstrate truth in advertising.</label>
+				<label for="qz18"><input type="checkbox" name="q4" id="qz18">I can describe how to demonstrate truth in advertising, utilizing sales ethics .</label>
+				<label for="qz19"><input type="checkbox" name="q4" id="qz19">I have previously worked in advertising, applying sales ethics to demonstrate truth in advertising.</label>
+			</fieldset>
+			<fieldset data-comp="flying">
+				<legend><p>Have you previously taken the DiSC assessment or another personality test like it? (Select one.)</p></legend>
+				<label for="qz20"><input type="radio" name="q5" id="qz9">I have not previously taken the DiSC assessment or another personality test like it.</label>
+				<label for="qz21"><input type="radio" name="q5" id="qz10">I have read about the DiSC assessment and understand its purpose.</label>
+				<label for="qz22"><input type="radio" name="q5" id="qz11">I have previously taken the DiSC assessment or another personality test like it.</label>
+				<label for="qz23"><input type="radio" name="q5" id="qz11">I have previously taken the DiSC assessment or another personality test like it.</label>
+			</fieldset>
+			<input type="submit" value="SUBMIT">
+		</form>
+		<div id="results">
+			<h2>Your Results:</h2>
+			<ul></ul>
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; <span id="copyYear">MMXVI</span> University of Phoenix. All rights reserved.</p>
+	</footer>
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="protoScript.js"></script>
+
+</body>
+</html>
