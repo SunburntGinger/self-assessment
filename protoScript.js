@@ -33,6 +33,7 @@ $('input:submit').on('click',function(e){
 		$(this).find('input:checked').each(function(){
 			score = parseFloat( $(this).attr('data-pts') );
 			tally[tallyKey][0] += score;
+			tally[tallyKey][0] = parseFloat(tally[tallyKey][0]).toPrecision(2);
 		});
 	});
 	$.each(tally, function(index, value){
