@@ -3,18 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>proto self diagnostic</title>
+	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="protoStyle.css">
 </head>
 <body>
 
-<div id="column">
+<div id="wrapper">
 	
 	<header>
-		<h1>Self-Diagnostic Prognosticator</h1>
-		<p><small>For demonstration purposes only.</small></p>
+		<div class="column">
+			<h1>Self-Diagnostic Prognosticator</h1>
+			<p><small>For demonstration purposes only.</small></p>
+		</div>
 	</header>
 
-	<main>
+	<main class="column">
 		<form id="theForm">
 			<legend><p>Answer questions and learn about yourself.</p></legend>
 			<fieldset data-comp="intelligence">
@@ -62,16 +65,17 @@
 			<input type="submit" value="SUBMIT">
 		</form>
 		<div id="results">
-			<h2>Your Results:</h2>
+			<h2>Your Results</h2>
 			<ul></ul>
 		</div>
 	</main>
 
+</div>
+<!-- end wrapper -->
+
 	<footer>
 		<p>&copy; <span id="copyYear">MMXVI</span> University of Phoenix. All rights reserved.</p>
 	</footer>
-
-</div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="protoScript.js"></script>

@@ -3,23 +3,34 @@
 	font-family: sans-serif;
 }
 
-#column {
+.column {
 	width: 80%;
 	max-width: 1000px;
 	min-width: 400px;
 	margin: 50px auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#wrapper {
+	padding-bottom: 1px; /*vertical collapse*/
+	min-height: calc(100vh - 80px);
+
 }
 
 header {
 	margin-bottom: 20px;
-	border-bottom: 1px solid #ccc;
+	background-color: #32b1ca;
+	padding: 1em 0px;
+	color: #fff;
 }
 
 footer {
-	margin-top: 20px;
-	border-top: 1px solid #ccc;
-	color: #888;
-	padding-top: 10px;
+	color: #444;
+	padding: 1em 0px;
+	text-align: center;
+	background-color: #d4cebf;
+	height: 80px;
 }
 
 fieldset {
@@ -38,6 +49,11 @@ label {
 
 #results {
 	display: none;
+}
+
+#results ul {
+	margin-left: 0px;
+	padding-left: 0px;
 }
 
 #results li {
