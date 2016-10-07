@@ -8,6 +8,8 @@ var tally = {
 	"flying":[0,0]
 }
 
+var chartData = [];
+
 
 $('fieldset').each(function(){
 	var totalInputs = $(this).find('label').last().index();
@@ -42,4 +44,39 @@ $('input:submit').on('click',function(e){
 	});
 	$('form').hide();
 	$('#results').fadeIn('fast');
+
+
+	for ( i=0; i<Object.keys(tally).length; i++ ) {
+		chartData[i] = tally[Object.keys(tally)[i]][0];
+	}
+
+
+
+// MAKING A CHART
+
+//var myChart = new Chart({  });
+var ctx = $("#myChart");
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: Object.keys(tally),
+        datasets: [{
+            label: 'self-assessment results',
+            data: chartData,
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+            borderWidth: 1
+        }]
+    }
 });
+
+
+});//submit
