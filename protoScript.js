@@ -75,7 +75,14 @@ var myChart = new Chart(ctx, {
             ],
             borderWidth: 1
         }]
-    }
+    },
+    options:{
+	    title: {
+	    	'display': true,
+	    	'fontSize': 20,
+	    	'text': 'Your Results'
+	    }
+	}
 });
 
 
